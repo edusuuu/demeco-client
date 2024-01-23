@@ -6,6 +6,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
+	<style>
+		*,
+		*::before,
+		*::after {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			min-height: 100vh;
+      background-image: url(https://demeco-dev.vercel.app/assets/bg_homepage.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      z-index: 0;
+      zoom: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      overflow-x: hidden;
+		}
+	</style>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
