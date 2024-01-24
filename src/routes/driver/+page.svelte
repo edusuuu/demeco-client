@@ -1,16 +1,10 @@
 <script>
     import { goto } from '$app/navigation'
-    import Users from '../../components/Users.svelte';
-    import Orderinfo from '../../components/Orderinfo.svelte';
+    import AcceptedOrder from '../../components/AcceptedOrder.svelte';
 
-    let isVisible = false;
+
     let orderVisible = false;
     function toggleVisibility() {
-    isVisible = !isVisible;
-    
-  }
-  
-    function toggleVisibilityOrder() {
     orderVisible = !isVisible;
   }
 
@@ -21,17 +15,13 @@
     
 </script>
 <div class="admin">
-    <h1><b>Welcome Admin!</b></h1>
+    <h1><b>Welcome Delivery Man!</b></h1>
     <div class="adminPage">
-      <input type="button" value="User List" class="btnSide1" on:click={toggleVisibility}/>
-      <input type="button" value="Pending Orders" class="btnSide2" on:click={toggleVisibilityOrder} />
+      <input type="button" value="Pending Orders" class="btnSide2" on:click={toggleVisibility} />
     </div>
 
-    {#if isVisible}
-    <Users />
-    {/if}
     {#if orderVisible}
-    <Orderinfo on:editStatus={handleEditStatus} />
+    <AcceptedOrder on:editStatus={handleEditStatus} />
     {/if}
  
 
