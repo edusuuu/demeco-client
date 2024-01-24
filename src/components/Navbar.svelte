@@ -10,7 +10,7 @@
       <a href="/#about-us">about us</a>
     </li>
     <li>
-      <a href="/signin">signin</a>
+      <a href="/signin">sign in</a>
     </li>
   </ul>
 </nav>

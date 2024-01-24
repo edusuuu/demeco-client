@@ -11,7 +11,7 @@
     <p>Sign in to your account.</p>
     <input type="text" placeholder="email" />
     <input type="password" placeholder="password" />
-    <a href="/password/forgot">forgot password</a>
+    <a href="/password/forgot">Forgot Password</a>
     <button type="submit">sign in</button>
   </form>
 </div>
